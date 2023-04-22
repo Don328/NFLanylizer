@@ -1,3 +1,14 @@
+.btn-primary-dark {
+    background:#393939;
+    color:#878787;
+    border-color:#bdbdbd
+}
+
+    .btn-primary-dark:hover {
+        color: #bdbdbd;
+        border-color: #878787;
+    }
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;

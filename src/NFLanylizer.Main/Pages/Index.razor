@@ -1,3 +1,28 @@
 ﻿@page "/"
+<div class="row">
+    <div class="col">
+        <button 
+            class="btn"
+            style="btn btn-primary-dark"
+            @onclick=SelectSeason>
+            Select Season
+        </button>
+    </div>
+    <div class="col"></div>
+</div>
+<h1 class="title">Welcome to NFLanylizer!</h1>
 
-<h1>Hello, world!</h1>
+@if(showSelectSeason)
+{
+    <div class="row">
+        <span class="warning-message">Selecting a new season will clear any unsaved data from the currently selected season.</span>
+    </div>
+    <div class="row">
+        <button 
+            class="btn"
+            style="btn-cancel"
+            @onclick=CancelSelectSeason>
+            Cancel
+        </button>
+    </div>
+}
